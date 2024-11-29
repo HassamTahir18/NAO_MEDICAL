@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text and Translation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        textarea, select, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #transcript, #translation {
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            min-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Speech Recognition and Translation</h1>
+
+        <!-- Language Input -->
+        <label for="language-input">Select Language for Speech Recognition:</label>
+        <select id="language-input">
+            <option value="en-US">English (US)</option>
+            <option value="fr-FR">French</option>
+            <option value="es-ES">Spanish</option>
+            <option value="de-DE">German</option>
+            <option value="it-IT">Italian</option>
+            <option value="hi-IN">Hindi</option>
+        </select>
+
+        <!-- Transcript Display -->
+        <label for="transcript">Spoken Text:</label>
+        <div id="transcript">The transcript will appear here...</div>
+
+        <!-- Translation Display -->
+        <label for="translation">Translation:</label>
+        <div id="translation">The translation will appear here...</div>
+
+        <!-- Buttons -->
+        <button id="start-recording">Start Recording</button>
+        <button id="speak-translation">Speak Translation</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
